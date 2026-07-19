@@ -1,0 +1,19 @@
+{
+  "train_runtime": 291.7955,
+  "train_samples_per_second": 2.231,
+  "train_steps_per_second": 0.288,
+  "total_flos": 180397640816640.0,
+  "train_loss": 0.4384524084272839,
+  "epoch": 3.0,
+  "eval_loss": 0.28423652052879333,
+  "eval_runtime": 1.6852,
+  "eval_samples_per_second": 10.088,
+  "eval_steps_per_second": 10.088,
+  "train_rows": 217,
+  "valid_rows": 17,
+  "train_dropped_overlength": 0,
+  "train_dropped_overlength_indices_after_placeholder_filter": [],
+  "train_excluded_by_sample_limit": 0,
+  "train_excluded_by_sample_limit_indices_after_placeholder_filter": [],
+  "validation_dropped_overlength": 0
+}

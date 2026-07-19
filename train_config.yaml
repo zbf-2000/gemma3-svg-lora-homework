@@ -1,0 +1,43 @@
+seed: 42
+base_model_id: google/gemma-3-270m-it
+model_name_or_path: models/gemma-3-270m-it
+train_file: data/train_compact.jsonl
+validation_file: data/valid_compact.jsonl
+evaluation_file: logo-detailed-prompt-main/valid.jsonl
+adapter_dir: adapter
+checkpoint_dir: runs/train
+training_metrics_file: training_metrics.json
+train_max_length: 768
+validation_max_length: 768
+long_example_policy: error
+max_train_samples: null
+dtype: bfloat16
+
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+training:
+  epochs: 3
+  batch_size: 1
+  gradient_accumulation: 8
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  warmup_steps: 3
+  eval_steps: 28
+  save_steps: 28
+  save_total_limit: 2
+
+generation:
+  max_new_tokens: 256
+  repetition_penalty: 1.0
+  no_repeat_ngram_size: 0

@@ -1,0 +1,12 @@
+models/
+__pycache__/
+*.py[cod]
+runs/
+*.partial
+*.tmp
+学生任务手册_PartB.pdf
+logo-detailed-prompt-main.zip
+.agents/
+adapter_*_backup/
+training_metrics_*_backup.json
+pilot_*.json
