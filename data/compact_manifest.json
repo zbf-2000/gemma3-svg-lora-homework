@@ -1,0 +1,15 @@
+{
+  "method": "deterministic two-primitive SVG curriculum v2",
+  "train": {
+    "source": "logo-detailed-prompt-main\\train.jsonl",
+    "destination": "data\\train_compact.jsonl",
+    "rows": 217,
+    "dropped": 2
+  },
+  "validation": {
+    "source": "logo-detailed-prompt-main\\valid.jsonl",
+    "destination": "data\\valid_compact.jsonl",
+    "rows": 17,
+    "dropped": 0
+  }
+}
